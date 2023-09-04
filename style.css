@@ -1,0 +1,166 @@
+/* ページ全体のスタイル */
+body {
+    font-family: 'Yu Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* ヘッダースタイル */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ヒーローセクションのスタイル */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* セクション共通のスタイル */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* お問い合わせフォームのスタイル（仮のスタイル） */
+.contact-form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* モバイル向けナビゲーションメニュー */
+.mobile-menu {
+    display: none; /* 初期状態では非表示 */
+}
+
+.nav-toggle {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.mobile-nav {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    padding: 10px 0;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* イベントスライドショー */
+.events-slider {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.event-slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.event-item {
+    flex: 0 0 auto;
+    width: 80%;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+/* モバイルデバイスのスタイル */
+@media screen and (max-width: 768px) {
+    /* モバイル向けナビゲーションメニューの表示 */
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    /* イベントスライドショーのスタイル */
+    .event-slider-container {
+        flex-wrap: nowrap;
+    }
+
+    .event-item {
+        width: 70%;
+    }
+}
