@@ -1,0 +1,76 @@
+/* お問い合わせフォームのスタイル */
+.contact-form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* モバイルデバイス向けヘッダーメニューの改善 */
+@media screen and (max-width: 768px) {
+    /* ハンバーガーメニューのアイコン */
+    .nav-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+
+    /* イベントスライドショーのスタイル */
+    .event-slider-container {
+        flex-wrap: nowrap;
+    }
+
+    .event-item {
+        width: 70%;
+    }
+}
+
+/* イベントスライドショーのスタイル */
+.events-slider {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.event-slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.event-item {
+    flex: 0 0 auto;
+    width: 80%;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+/* モバイル向けナビゲーションメニューの表示 */
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    .nav-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+}
